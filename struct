@@ -1,0 +1,48 @@
+|--bin                       (存放启动文件)
+|  |--www
+|  |--*.js         
+|--config                    (存放配置文件)
+|  |--config.dev.js
+|  |--config.beta.js
+|  |--config.pro.js
+|  |--config.js
+|--controllers               (存放业务控制代码)
+|  |--userController.js
+|  |--companyController.js
+|  |--*Controller.js
+|--models                    (存放mysql/redis-lua模型定义文件)
+|  |--User.js
+|  |--Department.js
+|  |--*.js
+|  |--initConn.js            (models层的入口文件)
+|--proxy                     (与mysql/redis交互层)
+|  |--userProxy.js
+|  |--departmentProxy.js
+|  |--*Proxy.js
+|--public                    (静态文件存储)
+|  |--images
+|  |--javascripts
+|  |--lib                     (存放外部库文件)
+|  |--stylesheets
+|--services                   (存放接口外脚本文件)
+|--test                       (存放单元测试文件)
+|  |--controller
+|  |  |--userController.test.js
+|  |  |--departmentController.test.js  
+|  |--proxy
+|  |  |--userProxy.test.js
+|  |  |--departmentProxy.test.js
+|--util                       (存放公用函数,数据结构定义)
+|  |--FUtils.js               (公用函数)
+|  |--FEnum.js                (公用枚举类型)
+|  |--FEnum.js                (错误码定义及错误信息定义)
+|--views                      (views层代码)
+|  |--includes                (存储公用的压缩文件)
+|  |--vendors                 (存储vendors业务代码)
+|  |--users                   (存储users业务代码)
+|  |--admins                  (存储admins业务代码)
+|--app.js                     (路由入口文件)
+|--Makefile                   (公共配置的Makefile文件)
+|--package.json               (npm管理文件)
+|--web_routes.js              (前后端路由封装)
+|--api_route.js               (后端接口放出文件)
